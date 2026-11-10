@@ -1,0 +1,27 @@
+{
+  "directoryType": "service-provider",
+  "pageConflicts": [],
+  "watchOut": [],
+  "owner": null,
+  "lastChecked": "2026-11-09",
+  "name": "Quickpay Funding",
+  "url": "https://quickpayfunding.com/",
+  "category": "Quote only",
+  "pricingConfidence": "quote",
+  "summary": "Owner-operator factoring with same-day funding, including weekends and holidays, and 24/7 fuel advances.",
+  "differentiator": "Funds the same day even on weekends and holidays, where Bobtail and Thunder Funding state weekday cutoffs. No minimum invoice amount or volume, so a carrier can factor a single small load.",
+  "terms": {
+    "rate": null,
+    "advance": "Up to 98% of the invoice within 24 hours",
+    "recourse": null,
+    "contract": null,
+    "minimum": "No monthly minimums, no minimum invoice amount or volume minimums",
+    "transfers": null,
+    "otherFees": "Clearly outlined fees (amounts not stated)",
+    "speed": "Same day, even on weekends and holidays",
+    "fuel": "24/7 fuel advances"
+  },
+  "sources": [
+    "https://quickpayfunding.com/freight-factoring/owner-operator-factoring/"
+  ]
+}

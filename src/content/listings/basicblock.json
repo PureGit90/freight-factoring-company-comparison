@@ -1,0 +1,45 @@
+{
+  "directoryType": "service-provider",
+  "pageConflicts": [],
+  "watchOut": [
+    "Advance rate and fuel program details are not stated on the page we read."
+  ],
+  "owner": null,
+  "lastChecked": "2026-11-09",
+  "name": "BasicBlock",
+  "url": "https://basicblock.io/",
+  "category": "Publishes a rate",
+  "pricingConfidence": "vendor",
+  "pricing": "Flat 2.5% or less per invoice",
+  "summary": "Non-recourse factoring for owner-operators and small fleets, with no contract, no reserve and no transaction fees.",
+  "differentiator": "The lowest published ceiling among the factors that state one: a flat 2.5% or less, against 3% at HaulPay and 3.24% at Bobtail. It also states no transaction fees, so the 2.5% is the all-in cost on its own page. No contract at all, not even a trial period.",
+  "terms": {
+    "rate": "BasicBlock charges a flat 2.5% (or less!) per invoice",
+    "advance": null,
+    "recourse": "Non-recourse: you're not on the hook if a broker fails to pay",
+    "contract": "No contract. Factor when you want. Stop when you want.",
+    "minimum": "No monthly minimums",
+    "transfers": "No transaction fees",
+    "otherFees": "No reserves. \"What we quote is what you pay.\"",
+    "speed": "Most carriers get paid within 24 hours of submitting paperwork",
+    "fuel": null
+  },
+  "costModel": {
+    "basis": "maximum",
+    "tiers": [
+      {
+        "upTo": null,
+        "ratePct": 2.5
+      }
+    ],
+    "perInvoiceFee": 0,
+    "monthlyMinimumFee": null,
+    "note": "The flat 2.5% \"or less\" ceiling; no transaction fees stated.",
+    "source": "https://basicblock.io/freight-factoring/"
+  },
+  "bestFor": "Owner-operators who want no contract and a single number.",
+  "skipIf": "You need same-day funding guaranteed; the page says most carriers are paid within 24 hours.",
+  "sources": [
+    "https://basicblock.io/freight-factoring/"
+  ]
+}

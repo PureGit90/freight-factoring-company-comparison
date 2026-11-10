@@ -1,0 +1,27 @@
+{
+  "directoryType": "service-provider",
+  "pageConflicts": [],
+  "watchOut": [],
+  "owner": null,
+  "lastChecked": "2026-11-09",
+  "name": "Factoring Express",
+  "url": "https://factoringexpress.com/",
+  "category": "Quote only",
+  "pricingConfidence": "quote",
+  "summary": "Trucking factoring with no long-term contracts and no monthly minimums.",
+  "differentiator": "Cancel-anytime terms with no monthly minimum, the most flexible exit we read alongside BasicBlock. Rate, advance and fees are quoted.",
+  "terms": {
+    "rate": null,
+    "advance": null,
+    "recourse": null,
+    "contract": "No long-term contracts. Cancel anytime.",
+    "minimum": "No monthly minimums",
+    "transfers": null,
+    "otherFees": "No hidden fees",
+    "speed": "Same-day advances; as fast as 24 hours",
+    "fuel": "Fuel discounts and credit programs"
+  },
+  "sources": [
+    "https://factoringexpress.com/factoring-for-trucking/"
+  ]
+}

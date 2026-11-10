@@ -1,0 +1,33 @@
+{
+  "directoryType": "service-provider",
+  "pageConflicts": [],
+  "watchOut": [
+    "The 1% figure is from a 2021 article (modified 2025), not a rate page."
+  ],
+  "owner": null,
+  "lastChecked": "2026-11-09",
+  "name": "Saint John Capital",
+  "url": "https://www.saintjohncapital.com/",
+  "category": "Publishes a rate",
+  "pricingConfidence": "vendor",
+  "pricing": "\"As little as 1%\" (2021 article, updated 2025)",
+  "summary": "Factoring for small fleets with a full advance and no reserve, plus an online instant quote.",
+  "differentiator": "Advances 100% of the invoice on delivery with no reserve held back, so nothing waits on the broker paying. Its only published rate, \"as little as 1%\", comes from an article, not a rate page, so treat it as a floor.",
+  "terms": {
+    "rate": "We factor your trucking invoices for as little as 1% (article)",
+    "advance": "100% cash advance upon delivery, or 50% fuel advance at pick-up",
+    "recourse": null,
+    "contract": "No contract (article)",
+    "minimum": null,
+    "transfers": null,
+    "otherFees": "No reserves; no hidden fees",
+    "speed": "Same-day payment when the BOL is uploaded by 12:00 EST",
+    "fuel": "Fuel discounts at over 1,500 truck stops"
+  },
+  "bestFor": "Small fleets that want the whole invoice up front.",
+  "skipIf": "You want a rate schedule; the quote comes through a form.",
+  "sources": [
+    "https://www.saintjohncapital.com/",
+    "https://www.saintjohncapital.com/best-mobile-technology-for-freight-factoring/"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "directoryType": "service-provider",
+  "pageConflicts": [],
+  "watchOut": [],
+  "owner": null,
+  "lastChecked": "2026-11-09",
+  "name": "Single Point Capital",
+  "url": "https://singlepointcapital.com/",
+  "category": "Quote only",
+  "pricingConfidence": "quote",
+  "summary": "Factoring for owner-operators, small fleets and new carriers across North America with advances up to 100%.",
+  "differentiator": "Names new carriers as a target and advances up to 100%. Contract is described only as \"no long contracts\".",
+  "terms": {
+    "rate": null,
+    "advance": "Up to 100%",
+    "recourse": null,
+    "contract": "No long contracts",
+    "minimum": null,
+    "transfers": null,
+    "otherFees": null,
+    "speed": "Within 24 hours",
+    "fuel": "Fuel advances and fuel discount program"
+  },
+  "sources": [
+    "https://singlepointcapital.com/solutions/freight-factoring"
+  ]
+}

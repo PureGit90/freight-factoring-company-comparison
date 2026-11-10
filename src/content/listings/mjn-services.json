@@ -1,0 +1,46 @@
+{
+  "directoryType": "service-provider",
+  "pageConflicts": [],
+  "watchOut": [
+    "The 1.5% is a variable rate that changes with shipper payment timing; it is not a flat 1.5%.",
+    "Recourse type is not stated on the rate page."
+  ],
+  "owner": null,
+  "lastChecked": "2026-11-09",
+  "name": "MJN Services",
+  "url": "https://www.mjnservices.com/",
+  "category": "Publishes a rate",
+  "pricingConfidence": "vendor",
+  "pricing": "1.5% variable or 3% flat; $200 monthly minimum after 90 days",
+  "summary": "Publishes a complete rate and fee schedule, with a variable rate that moves with how fast your shipper pays and a flat alternative.",
+  "differentiator": "The most complete fee schedule we found: every line, including the ones others leave out, is on one page. The catch is the $200 minimum monthly fee after 90 days. At $5K a month in invoices the 3% flat rate comes to $150, so the minimum lifts the real cost to $200, or 4%.",
+  "terms": {
+    "rate": "Variable rate 1.5% (adjusts based on shipper payment timing); flat rate 3% (fixed for 60 days regardless of payment timing)",
+    "advance": "Up to 95%",
+    "recourse": null,
+    "contract": "The initial contract period is 90 days",
+    "minimum": "$200/month, applies after 90 days; waived in months where calculated fees exceed this amount",
+    "transfers": "ACH transfer fee: none",
+    "otherFees": "Application fee, credit reporting fee and invoice processing fee: none. First 30 days free.",
+    "speed": "Invoices submitted by 1:00 PM MST receive same-day ACH",
+    "fuel": null
+  },
+  "costModel": {
+    "basis": "flat",
+    "tiers": [
+      {
+        "upTo": null,
+        "ratePct": 3
+      }
+    ],
+    "perInvoiceFee": 0,
+    "monthlyMinimumFee": 200,
+    "note": "The 3% flat rate, with the $200 monthly minimum that applies after 90 days. The 1.5% variable rate depends on how fast each shipper pays.",
+    "source": "https://www.mjnservices.com/factoring/rates"
+  },
+  "bestFor": "Carriers who want every fee in writing before signing.",
+  "skipIf": "You factor under about $6,700 a month; the $200 minimum then costs more than 3%.",
+  "sources": [
+    "https://www.mjnservices.com/factoring/rates"
+  ]
+}

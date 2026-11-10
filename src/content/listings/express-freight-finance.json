@@ -1,0 +1,29 @@
+{
+  "directoryType": "service-provider",
+  "pageConflicts": [],
+  "watchOut": [],
+  "owner": null,
+  "lastChecked": "2026-11-09",
+  "name": "Express Freight Finance",
+  "url": "https://expressfreightfinance.com/",
+  "category": "Quote only",
+  "pricingConfidence": "quote",
+  "summary": "Carrier factoring with 1 to 12 month contracts, free credit checks and no reserve.",
+  "differentiator": "States contract options from 1 to 12 months, among the shortest offered, plus no volume or concentration limits, so one big broker can be most of your freight. It writes that a flat rate \"should generally be no higher than 3%\" but does not publish its own.",
+  "terms": {
+    "rate": null,
+    "advance": "Full advance",
+    "recourse": "Covers the risk if your customer cannot pay due to insolvency or bankruptcy",
+    "contract": "Flexible 1-12 month contracts, optional DropPay upgrade",
+    "minimum": "Zero volume or concentration limits",
+    "transfers": null,
+    "otherFees": "Free credit checks, no setup fees, no reserve requirements",
+    "speed": null,
+    "fuel": "Same-day fuel advances on booked loads"
+  },
+  "sources": [
+    "https://expressfreightfinance.com/factoring-for-carriers/",
+    "https://expressfreightfinance.com/faqs/",
+    "https://expressfreightfinance.com/rate-structures-in-freight-factoring/"
+  ]
+}

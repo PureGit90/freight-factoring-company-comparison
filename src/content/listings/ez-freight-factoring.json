@@ -1,0 +1,28 @@
+{
+  "directoryType": "service-provider",
+  "pageConflicts": [],
+  "watchOut": [],
+  "owner": null,
+  "lastChecked": "2026-11-09",
+  "name": "EZ Freight Factoring",
+  "url": "https://ezfreightfactoring.com/",
+  "category": "Quote only",
+  "pricingConfidence": "quote",
+  "summary": "Recourse and non-recourse factoring for carriers and freight brokers on month-to-month contracts.",
+  "differentiator": "One of the few that factors for freight brokers as well as carriers, on month-to-month contracts with no setup or application fees and up to 50% fuel advances.",
+  "terms": {
+    "rate": null,
+    "advance": "Up to 98%, same day",
+    "recourse": "Recourse and non-recourse options",
+    "contract": "Month-to-month contracts, no long-term contracts",
+    "minimum": "No minimum volumes",
+    "transfers": null,
+    "otherFees": "No application or setup fees",
+    "speed": null,
+    "fuel": "Fuel advances up to 50%; free fuel card"
+  },
+  "sources": [
+    "https://ezfreightfactoring.com/",
+    "https://ezfreightfactoring.com/factoring-faq/"
+  ]
+}

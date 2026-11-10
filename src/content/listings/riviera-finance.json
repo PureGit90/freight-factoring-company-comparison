@@ -1,0 +1,28 @@
+{
+  "directoryType": "service-provider",
+  "pageConflicts": [],
+  "watchOut": [],
+  "owner": null,
+  "lastChecked": "2026-11-09",
+  "name": "Riviera Finance",
+  "url": "https://www.rivierafinance.com/",
+  "category": "Quote only",
+  "pricingConfidence": "quote",
+  "summary": "Long-standing factor for owner-operators and fleets with a 95% advance and no monthly minimums.",
+  "differentiator": "Says term agreements \"normally vary from three months to two years\", the widest contract range any factor stated. Ask for the shortest term on offer and its rate.",
+  "terms": {
+    "rate": null,
+    "advance": "95% advance rate",
+    "recourse": "Recourse is lower cost; non-recourse costs slightly more and includes credit protection",
+    "contract": "Term agreements normally vary from three months to two years",
+    "minimum": "No monthly minimums",
+    "transfers": null,
+    "otherFees": "No hidden fees",
+    "speed": "Funding within 24 hours of verification",
+    "fuel": "Fuel discounts at TA, Petro, Speedway, Roady's and others"
+  },
+  "sources": [
+    "https://www.rivierafinance.com/freight-factoring/",
+    "https://www.rivierafinance.com/finance-blog/how-much-does-factoring-cost/"
+  ]
+}

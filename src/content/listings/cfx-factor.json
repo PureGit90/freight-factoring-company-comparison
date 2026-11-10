@@ -1,0 +1,34 @@
+{
+  "directoryType": "service-provider",
+  "pageConflicts": [],
+  "watchOut": [
+    "Wire fee amount not stated."
+  ],
+  "owner": null,
+  "lastChecked": "2026-11-09",
+  "name": "CFX Factor",
+  "url": "https://cfxfactor.com/",
+  "category": "Publishes a rate",
+  "pricingConfidence": "vendor",
+  "pricing": "2% to 3% of the invoice, flat",
+  "summary": "Flat-rate factoring for owner-operators and fleets, with non-recourse options and a fuel savings program.",
+  "differentiator": "States its standard term plainly: one year, which it calls the industry norm, with month-to-month available. Most factors bury the term; CFX puts it in its FAQ next to a 2% to 3% flat rate and no monthly minimum.",
+  "terms": {
+    "rate": "The rate at CFX is 2% to 3% of the invoice",
+    "advance": "Up to 98%, advanced the same day",
+    "recourse": "Non-recourse options available",
+    "contract": "Standard term is one year; month-to-month agreements exist",
+    "minimum": "Flat rate with no monthly minimum",
+    "transfers": "Zero transaction fees; wire fees apply",
+    "otherFees": null,
+    "speed": null,
+    "fuel": "Save up to 80 cents per gallon at major truck stops (CFX claim)"
+  },
+  "bestFor": "Carriers who want the term stated before they apply.",
+  "skipIf": "You will not sign a year; ask for month-to-month and its rate.",
+  "sources": [
+    "https://cfxfactor.com/blog/freight-factoring-rates/",
+    "https://cfxfactor.com/faq/",
+    "https://cfxfactor.com/solutions/same-day-factoring/"
+  ]
+}

@@ -1,0 +1,89 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { CONFIDENCE, categoryByName } from '../../lib/site';
+import { VOLUMES, AVG_INVOICE, BASIS_LABEL, monthlyCost, usd } from '../../lib/cost';
+
+export async function getStaticPaths() {
+  const listings = await getCollection('listings');
+  return listings.map((listing) => ({ params: { id: listing.id }, props: { listing } }));
+}
+
+const { listing } = Astro.props;
+const d = listing.data;
+const conf = CONFIDENCE[d.pricingConfidence];
+const href = d.affiliateUrl ?? d.url;
+const cat = categoryByName(d.category);
+const NS = 'Not stated on the pages we read';
+const rows: [string, string | null][] = [
+  ['Rate', d.terms.rate ?? d.pricing ?? null],
+  ['Advance', d.terms.advance],
+  ['Recourse', d.terms.recourse],
+  ['Contract', d.terms.contract],
+  ['Monthly minimum', d.terms.minimum],
+  ['Transfer fees', d.terms.transfers],
+  ['Other fees', d.terms.otherFees],
+  ['Funding speed', d.terms.speed],
+  ['Fuel', d.terms.fuel],
+];
+const jsonLd = [{ '@context': 'https://schema.org', '@type': 'FinancialService', name: d.name, description: d.summary, url: d.url }];
+---
+<BaseLayout title={`${d.name} Factoring Review: Rates and Fees`} description={`${d.summary} Terms read ${d.lastChecked}.`} jsonLd={jsonLd}>
+  <div class="wrap prose wide">
+    <p class="crumbs"><a href="/">Home</a> / <a href="/all/">All factors</a> / {d.name}</p>
+    <h1>{d.name} factoring: rates, fees and terms</h1>
+    <div class="meta">
+      <span class={`tag ${conf.tone}`}>{conf.label}</span>
+      {cat && <span class="tag neutral">{cat.short}</span>}
+      <span class="tag neutral">Read {d.lastChecked}</span>
+    </div>
+    <p class="lead">{d.summary}</p>
+    {d.owner && <p><strong>Ownership:</strong> {d.owner}.</p>}
+    <p><a class="btn" href={href} rel="sponsored noopener" target="_blank">Go to {d.name}</a></p>
+
+    <div class="panel">
+      <h2>What sets it apart</h2>
+      <p>{d.differentiator}</p>
+    </div>
+
+    {d.pageConflicts.length > 0 && (
+      <div class="panel signal">
+        <h2>Read twice: its own pages disagree</h2>
+        <ul>{d.pageConflicts.map((c) => <li>{c}</li>)}</ul>
+        <p class="small">Ask which version applies to you, and get it in the contract.</p>
+      </div>
+    )}
+
+    <h2>Published terms</h2>
+    <div class="table-wrap">
+      <table class="stack">
+        <caption>{d.name} terms, copied from its own pages on {d.lastChecked}</caption>
+        <tbody>
+          {rows.map(([k, v]) => (<tr><th scope="row">{k}</th><td data-label={k}>{v ?? NS}</td></tr>))}
+        </tbody>
+      </table>
+    </div>
+
+    {d.costModel && (
+      <>
+        <h2>Monthly cost at the published rate</h2>
+        <p>{VOLUMES.map((v) => `${usd(v)} a month: ${usd(monthlyCost(d.costModel!, v))}`).join('. ')}. Based on the {BASIS_LABEL[d.costModel.basis].toLowerCase()}. {d.costModel.note} Per-invoice fees counted at a {usd(AVG_INVOICE)} invoice.</p>
+      </>
+    )}
+
+    {(d.bestFor || d.skipIf) && (
+      <div class="two">
+        {d.bestFor && <div><strong>Fits</strong><p>{d.bestFor}</p></div>}
+        {d.skipIf && <div><strong>Look elsewhere if</strong><p>{d.skipIf}</p></div>}
+      </div>
+    )}
+
+    {d.watchOut.length > 0 && (<><h2>Ask before you sign</h2><ul>{d.watchOut.map((w) => <li>{w}</li>)}</ul></>)}
+
+    <p><a class="btn" href={href} rel="sponsored noopener" target="_blank">Go to {d.name}</a></p>
+
+    <h2>Pages we read</h2>
+    <ul class="sources">{d.sources.map((s) => <li><a href={s} rel="noopener" target="_blank">{s}</a></li>)}</ul>
+    <p class="small">Factors change rates and terms. If this is out of date, <a href="/corrections/">tell us</a>.</p>
+  </div>
+</BaseLayout>

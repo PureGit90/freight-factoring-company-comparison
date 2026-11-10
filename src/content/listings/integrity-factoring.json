@@ -1,0 +1,29 @@
+{
+  "directoryType": "service-provider",
+  "pageConflicts": [],
+  "watchOut": [],
+  "owner": null,
+  "lastChecked": "2026-11-09",
+  "name": "Integrity Factoring",
+  "url": "https://www.integrityfactoring.com/",
+  "category": "Quote only",
+  "pricingConfidence": "quote",
+  "summary": "Flat-fee factoring for small and mid-sized carriers with recourse and non-recourse options and a free fuel card.",
+  "differentiator": "Publishes a guide to the fees other factors hide, with ranges (wire $10 to $30, lockbox $50 to $100 a month), but not its own flat fee. Useful as a checklist; ask Integrity for its own numbers against it.",
+  "terms": {
+    "rate": "Flat factoring fee (amount not stated)",
+    "advance": "Up to 95 percent",
+    "recourse": "Recourse and non-recourse options",
+    "contract": null,
+    "minimum": null,
+    "transfers": null,
+    "otherFees": "No hidden fees",
+    "speed": "Typically within 24 hours",
+    "fuel": "Free fuel card"
+  },
+  "sources": [
+    "https://www.integrityfactoring.com/trucking-freight-factoring/",
+    "https://www.integrityfactoring.com/freight-factoring-charges-rates/",
+    "https://www.integrityfactoring.com/avoid-hidden-fees-freight-factoring-trucking/"
+  ]
+}

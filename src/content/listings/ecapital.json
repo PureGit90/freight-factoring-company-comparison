@@ -1,0 +1,30 @@
+{
+  "directoryType": "service-provider",
+  "pageConflicts": [],
+  "watchOut": [
+    "TAFS reviews and contracts now lead to eCapital."
+  ],
+  "owner": "eCapital; tafs.com now redirects to ecapital.com",
+  "lastChecked": "2026-11-09",
+  "name": "eCapital (includes TAFS)",
+  "url": "https://ecapital.com/products/freight-factoring/",
+  "category": "Quote only",
+  "pricingConfidence": "quote",
+  "summary": "Large commercial finance group whose freight factoring now also covers the former TAFS brand.",
+  "differentiator": "If you are comparing TAFS and eCapital, they are now one company: tafs.com redirects to ecapital.com. eCapital publishes up to 100% advances and funding in as little as an hour, but no rate.",
+  "terms": {
+    "rate": null,
+    "advance": "Up to 100% (eCapital says the industry usually advances 80-90%)",
+    "recourse": "Recourse or non-recourse options",
+    "contract": "You are not required to sign long-term contracts",
+    "minimum": null,
+    "transfers": "ACH and wire transfers",
+    "otherFees": null,
+    "speed": "Funded in as fast as 1 hour",
+    "fuel": "Fuel program with $2,500 in pre-approved credit, also available without factoring"
+  },
+  "sources": [
+    "https://ecapital.com/products/freight-factoring/",
+    "https://www.tafs.com/"
+  ]
+}

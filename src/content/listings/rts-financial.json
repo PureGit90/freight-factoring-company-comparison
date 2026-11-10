@@ -1,0 +1,29 @@
+{
+  "directoryType": "service-provider",
+  "pageConflicts": [],
+  "watchOut": [
+    "Rate, recourse and contract length not stated on the page we read."
+  ],
+  "owner": null,
+  "lastChecked": "2026-11-09",
+  "name": "RTS Financial",
+  "url": "https://rtsinc.com/",
+  "category": "Quote only",
+  "pricingConfidence": "quote",
+  "summary": "One of the most-searched factoring brands, with factoring, fuel cards and a referral program.",
+  "differentiator": "For the brand carriers search most by name (\"rts factoring reviews\" is the top review query we measured), its own factoring page publishes no rate, no recourse type and no contract length; it says final rates depend on full underwriting. Get the rate, term and termination clause in writing before you compare it with a factor that publishes one.",
+  "terms": {
+    "rate": null,
+    "advance": "Advances more than 90 percent of the total within 24 hours",
+    "recourse": null,
+    "contract": "Final rates and approval vary based on full underwriting and required contracts",
+    "minimum": null,
+    "transfers": null,
+    "otherFees": "Zero hidden fees",
+    "speed": "Cash in 24 hours or less; same-day pay",
+    "fuel": null
+  },
+  "sources": [
+    "https://rtsinc.com/trucking-services/freight-factoring"
+  ]
+}

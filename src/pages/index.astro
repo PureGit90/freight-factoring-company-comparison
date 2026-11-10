@@ -1,0 +1,77 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import CostTable from '../components/CostTable.astro';
+import { SITE_NAME, TAGLINE, SITE_DESCRIPTION, CATEGORIES, HERO_PANEL, DATA_DATE_LABEL } from '../lib/site';
+
+const listings = (await getCollection('listings')).sort((a, b) => a.data.name.localeCompare(b.data.name));
+const owned = listings.filter((l) => l.data.owner);
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: SITE_NAME,
+    itemListElement: listings.map((listing, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      name: listing.data.name,
+      url: new URL(`/listings/${listing.id}/`, Astro.site ?? 'https://example.com').toString(),
+    })),
+  },
+];
+---
+<BaseLayout title="Freight Factoring Companies Compared: Rates and Fees" description={SITE_DESCRIPTION} jsonLd={jsonLd}>
+  <section class="hero">
+    <div class={HERO_PANEL ? 'wrap' : 'wrap solo'}>
+      <div>
+        <h1>{TAGLINE}</h1>
+        <p>{SITE_DESCRIPTION}</p>
+        <p><a class="btn" href="/freight-factoring-rates/">See the rate and cost table</a></p>
+      </div>
+      {HERO_PANEL && (
+        <div class="sheet" aria-label={HERO_PANEL.title}>
+          <h2>{HERO_PANEL.title}</h2>
+          {HERO_PANEL.subtitle && <p class="trip">{HERO_PANEL.subtitle}</p>}
+          <dl>
+            {HERO_PANEL.rows.map((r) => (
+              <div class={`row${r.kind ? ' ' + r.kind : ''}`}><dt>{r.label}</dt><dd>{r.value}</dd></div>
+            ))}
+          </dl>
+          <p class="src"><a href={HERO_PANEL.source.href}>{HERO_PANEL.source.label}</a>, read {DATA_DATE_LABEL}.</p>
+        </div>
+      )}
+    </div>
+  </section>
+
+  <div class="wrap">
+    <h2>What a month of factoring costs, where the rate is published</h2>
+    <CostTable />
+
+    <h2>Where to start</h2>
+    <ul class="paths">
+      {CATEGORIES.map((c) => (
+        <li>
+          <h3><a href={`/category/${c.slug}/`}>{c.name}</a></h3>
+          <p>{listings.filter((l) => l.data.category === c.name).length} factors. {c.intro}</p>
+        </li>
+      ))}
+    </ul>
+
+    {owned.length > 0 && (
+      <>
+        <h2>Who owns whom</h2>
+        <div class="prose">
+          <p>Who stands behind each brand, where its own site says so. TAFS is now eCapital, and TruckSmarter sends carriers to OTR Solutions, so compare those as one.</p>
+          <ul>
+            {owned.map((l) => <li><a href={`/listings/${l.id}/`}>{l.data.name}</a>: {l.data.owner}.</li>)}
+          </ul>
+        </div>
+      </>
+    )}
+
+    <div class="panel">
+      <h2>What this site is not</h2>
+      <p>It does not rank factors, and nobody pays to be listed or placed higher. It never asks for your income, invoices or bank details, and it does not pass your information to any factor. Every figure is read from the factor's own pages on {DATA_DATE_LABEL}. Read <a href="/how-we-compare/">how we compare</a> and <a href="/about/">who runs this site</a>.</p>
+    </div>
+  </div>
+</BaseLayout>

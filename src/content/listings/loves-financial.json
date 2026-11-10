@@ -1,0 +1,28 @@
+{
+  "directoryType": "service-provider",
+  "pageConflicts": [],
+  "watchOut": [],
+  "owner": null,
+  "lastChecked": "2026-11-09",
+  "name": "Love's Financial",
+  "url": "https://www.lovesfinancial.com/",
+  "category": "Quote only",
+  "pricingConfidence": "quote",
+  "summary": "Factoring tied to the Love's travel stop network, with a fuel discount and a guaranteed credit line.",
+  "differentiator": "The fuel side is the published part: at least $0.30 a gallon off and a $2,500 guaranteed credit line for fuel, tires, maintenance or in-store purchases. The factoring fee is described as flat but not stated.",
+  "terms": {
+    "rate": "Flat factoring fee with full advance (amount not stated)",
+    "advance": "Up to 99%",
+    "recourse": "Non-recourse and recourse options",
+    "contract": "No long-term contracts",
+    "minimum": null,
+    "transfers": null,
+    "otherFees": null,
+    "speed": "Paid within 24 hours and generally the same day",
+    "fuel": "Minimum $.30/gallon savings and a $2,500 guaranteed credit line"
+  },
+  "sources": [
+    "https://www.lovesfinancial.com/service/freight-factoring",
+    "https://www.lovesfinancial.com/features"
+  ]
+}

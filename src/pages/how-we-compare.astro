@@ -1,0 +1,52 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { CONFIDENCE, CONTACT_EMAIL, DATA_DATE_LABEL } from '../lib/site';
+import { VOLUMES, AVG_INVOICE, BASIS_LABEL, usd } from '../lib/cost';
+---
+<BaseLayout title="How We Compare Freight Factoring Companies" description="How this site reads each factor's own pages, what the rate labels mean, how the monthly cost is worked out, and what we never ask you for.">
+  <div class="wrap prose">
+    <p class="crumbs"><a href="/">Home</a> / How we compare</p>
+    <h1>How we compare factoring companies</h1>
+    <p class="lead">This site records what each factor publishes about rates, fees and terms, and nothing more.</p>
+
+    <h2>What we did</h2>
+    <p>On {DATA_DATE_LABEL} we opened each factor's own pages, including rate pages, FAQs and terms and conditions where they exist, and copied the figures and statements we found, with the page address, into its listing. Where two of a factor's own pages disagree, we show both and mark them "read twice".</p>
+
+    <h2>What we did not do</h2>
+    <ul>
+      <li>We did not apply, request quotes, call factors or use their services. <strong>We have not tested any factor.</strong></li>
+      <li>We did not verify claims such as fuel savings per gallon. They are marked as the factor's own.</li>
+      <li>We did not use review sites or other comparison sites as a source for any figure.</li>
+    </ul>
+
+    <h2>What the rate labels mean</h2>
+    <ul>
+      <li><strong>{CONFIDENCE.vendor.label}.</strong> {CONFIDENCE.vendor.note}</li>
+      <li><strong>{CONFIDENCE.quote.label}.</strong> {CONFIDENCE.quote.note} We do not estimate a number.</li>
+    </ul>
+    <p>A published rate can be four different things, and the cost table says which:</p>
+    <ul>
+      <li><strong>{BASIS_LABEL.tiered}:</strong> a rate for each band of monthly invoice volume.</li>
+      <li><strong>{BASIS_LABEL.flat}:</strong> one rate for every invoice.</li>
+      <li><strong>{BASIS_LABEL.maximum}:</strong> the most the factor says it charges.</li>
+      <li><strong>{BASIS_LABEL.starting}:</strong> the lowest rate offered, usually to large carriers. It is not what a small carrier should expect.</li>
+    </ul>
+    <p>"Not stated on the pages we read" means exactly that. A factor may say it elsewhere or in the contract.</p>
+
+    <h2>How the monthly cost is worked out</h2>
+    <p>For factors that publish a usable rate, we multiply it by fixed example volumes of {VOLUMES.map((v) => usd(v)).join(', ')} a month, add any published per-invoice fee at an average invoice of {usd(AVG_INVOICE)}, and apply any published monthly minimum. We assume ACH transfers where they are free. Wire, same-day and instant transfer fees are listed on each factor's page but not added, because they depend on how often you use them.</p>
+    <p>We use fixed examples on purpose. This site never asks for your revenue, invoice volume or any other figure about your business.</p>
+
+    <h2>What we never ask for</h2>
+    <p>No forms, no quotes, no matching. We do not collect income, invoices, bank details, credit scores or tax IDs, and we do not pass anything about you to any factor. When you click through, you apply on the factor's own site.</p>
+
+    <h2>How factors are ordered</h2>
+    <p>Alphabetically, everywhere, including the cost table. We do not rank factors. Nobody pays to be listed or to move up, and the order never reflects a referral fee.</p>
+
+    <h2>Money</h2>
+    <p>Some links may be referral or affiliate links, and we may earn a fee if you sign up through them. Whether a factor has a referral program does not decide whether it is listed or what we say about it. See the <a href="/affiliate-disclosure/">affiliate disclosure</a>.</p>
+
+    <h2 id="corrections">Corrections</h2>
+    <p>Each listing shows the date we read it. If something is out of date or wrong, see the <a href="/corrections/">corrections page</a>.{CONTACT_EMAIL && <> Write to <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>.</>}</p>
+  </div>
+</BaseLayout>

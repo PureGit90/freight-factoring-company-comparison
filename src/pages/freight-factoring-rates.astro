@@ -1,0 +1,78 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import CostTable from '../components/CostTable.astro';
+import { DATA_DATE_LABEL } from '../lib/site';
+import { monthlyCost, usd } from '../lib/cost';
+
+const all = await getCollection('listings');
+const published = all.filter((l) => l.data.pricingConfidence === 'vendor').sort((a, b) => a.data.name.localeCompare(b.data.name));
+const priced = all.filter((l) => l.data.costModel);
+const at10 = priced.map((l) => ({ name: l.data.name, cost: monthlyCost(l.data.costModel!, 10000), basis: l.data.costModel!.basis }));
+const firm = at10.filter((r) => r.basis !== 'starting');
+const lo = firm.reduce((a, b) => (b.cost < a.cost ? b : a));
+const hi = firm.reduce((a, b) => (b.cost > a.cost ? b : a));
+const conflicts = all.filter((l) => l.data.pageConflicts.length > 0);
+const startingCount = priced.length - firm.length;
+
+const faq = [
+  {
+    q: 'How much does freight factoring cost on $10,000 a month?',
+    a: `Among factors that publish a tier, flat rate or maximum, from ${usd(lo.cost)} (${lo.name}) to ${usd(hi.cost)} (${hi.name}) a month, read ${DATA_DATE_LABEL}. ${all.length - published.length} of the ${all.length} factors we read do not publish a rate at all.`,
+  },
+  {
+    q: 'How many freight factoring companies publish their rates?',
+    a: `${published.length} of the ${all.length} we read print a rate of some kind on their own pages. ${firm.length} publish a tier, a flat rate or a maximum that prices a month of invoices; ${startingCount} more publish only a starting rate, the best case.`,
+  },
+];
+const jsonLd = [{
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
+}];
+---
+<BaseLayout title="Freight Factoring Rates and Fees Compared (2026)" description={`What ${all.length} freight factoring companies publish about rates and fees, and the monthly cost at $10K, $25K and $50K for the ${priced.length} that print a usable rate.`} jsonLd={jsonLd}>
+  <div class="wrap prose wide">
+    <p class="crumbs"><a href="/">Home</a> / Rates and cost</p>
+    <h1>Freight factoring rates and fees</h1>
+    <p class="lead">{published.length} of {all.length} factors print a rate on their own pages. {firm.length} print a tier, flat rate or maximum that prices a month of invoices, and {startingCount} more print a best-case starting rate. The other {all.length - published.length} quote after you apply.</p>
+
+    <h2>Monthly cost at the published rate</h2>
+    <CostTable />
+
+    <h2>Every published rate, as written</h2>
+    <div class="table-wrap">
+      <table class="stack">
+        <caption>Published rates, copied from each factor's own pages</caption>
+        <thead><tr><th scope="col">Factor</th><th scope="col">What the page says</th></tr></thead>
+        <tbody>
+          {published.map((l) => (
+            <tr><th scope="row"><a href={`/listings/${l.id}/`}>{l.data.name}</a></th><td data-label="What the page says">{l.data.pricing}</td></tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+
+    {conflicts.length > 0 && (
+      <div class="panel">
+        <h2>Read twice: factors whose own pages disagree</h2>
+        <ul>
+          {conflicts.map((l) => <li><a href={`/listings/${l.id}/`}>{l.data.name}</a>: {l.data.pageConflicts.join(' ')}</li>)}
+        </ul>
+      </div>
+    )}
+
+    <h2>What to get in writing</h2>
+    <ul>
+      <li>The rate for your monthly volume, and whether it is flat or moves with how fast the broker pays.</li>
+      <li>Every transfer fee: ACH, wire, same-day and instant.</li>
+      <li>Any monthly minimum, and when it starts.</li>
+      <li>Contract length, how it renews and the notice needed to leave.</li>
+      <li>Recourse: what happens when a broker does not pay, and whether disputes are covered.</li>
+      <li>Penalty fees, for example a broker paying you instead of the factor.</li>
+    </ul>
+
+    <h2>Questions</h2>
+    {faq.map((f) => (<><h3>{f.q}</h3><p>{f.a}</p></>))}
+  </div>
+</BaseLayout>

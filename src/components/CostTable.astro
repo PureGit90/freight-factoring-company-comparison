@@ -1,0 +1,39 @@
+---
+import { getCollection } from 'astro:content';
+import { VOLUMES, AVG_INVOICE, BASIS_LABEL, monthlyCost, rateFor, usd } from '../lib/cost';
+import { DATA_DATE_LABEL } from '../lib/site';
+
+const priced = (await getCollection('listings'))
+  .filter((l) => l.data.costModel)
+  .sort((a, b) => a.data.name.localeCompare(b.data.name));
+const k = (n: number) => `$${n / 1000}K`;
+---
+<div class="table-wrap">
+  <table class="stack">
+    <caption>Monthly factoring cost at each factor's published rate, read {DATA_DATE_LABEL}</caption>
+    <thead>
+      <tr>
+        <th scope="col">Factor</th>
+        <th scope="col">Which number</th>
+        {VOLUMES.map((v) => <th scope="col" class="num">{k(v)} a month</th>)}
+        <th scope="col">What it includes</th>
+      </tr>
+    </thead>
+    <tbody>
+      {priced.map((l) => {
+        const m = l.data.costModel!;
+        return (
+          <tr>
+            <th scope="row"><a href={`/listings/${l.id}/`}>{l.data.name}</a></th>
+            <td data-label="Which number"><span class={`tag ${m.basis === 'starting' ? 'signal' : 'primary'}`}>{BASIS_LABEL[m.basis]}</span></td>
+            {VOLUMES.map((v) => (
+              <td data-label={`${k(v)} a month`} class="num">{usd(monthlyCost(m, v))}<br /><span class="small">{rateFor(m, v)}%{monthlyCost(m, v) > (v * rateFor(m, v)) / 100 + 0.5 ? ', minimum applies' : ''}</span></td>
+            ))}
+            <td data-label="What it includes">{m.note} <a href={m.source} rel="noopener" target="_blank">Source</a>.</td>
+          </tr>
+        );
+      })}
+    </tbody>
+  </table>
+</div>
+<p class="small">Fixed example volumes; we never ask for your numbers. Per-invoice fees counted at an average invoice of {usd(AVG_INVOICE)}. A starting rate is the best case, not what a small carrier should expect. Rows are alphabetical, not ranked.</p>

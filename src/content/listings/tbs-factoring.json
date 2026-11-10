@@ -1,0 +1,28 @@
+{
+  "directoryType": "service-provider",
+  "pageConflicts": [],
+  "watchOut": [],
+  "owner": null,
+  "lastChecked": "2026-11-09",
+  "name": "TBS Factoring Service",
+  "url": "https://tbsfactoring.com/",
+  "category": "Quote only",
+  "pricingConfidence": "quote",
+  "summary": "Fixed-rate factoring for owner-operators with credit protection and same-day processing.",
+  "differentiator": "States no monthly minimums and no transfer fees and takes the loss when a customer cannot pay for credit reasons. Calls its rates \"low, fixed\" but does not publish them.",
+  "terms": {
+    "rate": "Low, fixed rates (amount not stated)",
+    "advance": null,
+    "recourse": "TBS takes the loss if a customer does not pay for credit or funding reasons",
+    "contract": null,
+    "minimum": "No monthly minimums",
+    "transfers": "No transfer fees",
+    "otherFees": null,
+    "speed": "Processed the same day you submit",
+    "fuel": "Fuel advances up to 50% on any load"
+  },
+  "sources": [
+    "https://tbsfactoring.com/",
+    "https://tbsfactoring.com/cheapest-rates/"
+  ]
+}

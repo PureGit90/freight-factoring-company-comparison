@@ -1,0 +1,31 @@
+{
+  "siteName": "Freight Factoring Compared",
+  "markStyle": "invoice",
+  "palette": {
+    "deep": "#13302c",
+    "chalk": "#f3f5f4",
+    "ink": "#15201e",
+    "muted": "#4b5966",
+    "rule": "#d3dbe2",
+    "primary": "#1d5e57",
+    "accent": "#94560f",
+    "bar1": "#5fb3a6",
+    "bar2": "#9fd1c8",
+    "bar3": "#e0a24a"
+  },
+  "headline": ["29 freight factors.", "What they publish,", "side by side."],
+  "sub": ["Rates, fees, contracts and recourse,", "from each factor's own pages."],
+  "footnote": "Read November 9, 2026",
+  "panel": {
+    "title": "Cost on $10K of invoices",
+    "subtitle": "At each factor's published rate",
+    "rows": [
+      ["BasicBlock (max 2.5%)", "$250", ""],
+      ["Bobtail (max 3.24%)", "$324", ""],
+      ["DAT Outgo (3% tier)", "$300", ""],
+      ["HaulPay (max 3%)", "$300", ""],
+      ["MJN Services (3% flat)", "$300", ""]
+    ],
+    "source": "Factors' own rate pages"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "directoryType": "service-provider",
+  "pageConflicts": [
+    "Rate: home page says max 3.24%; FAQ says usually 1.5% to 3.5%.",
+    "Contract: home page says no long-term commitment for the first 90 days; FAQ says you move into a long-term contract after the 90-day trial."
+  ],
+  "watchOut": [
+    "Expedited payment carries an extra fee whose amount is not stated on the pages we read.",
+    "Recourse type is not stated on the pages we read."
+  ],
+  "owner": null,
+  "lastChecked": "2026-11-09",
+  "name": "Bobtail",
+  "url": "https://www.bobtail.com/",
+  "category": "Publishes a rate",
+  "pricingConfidence": "vendor",
+  "pricing": "Home page: negotiable rates, max 3.24%. FAQ: usually 1.5% to 3.5%",
+  "summary": "App-based factoring with a fuel card, aimed at owner-operators and small fleets, with same-day pay included.",
+  "differentiator": "Bobtail's own pages disagree on two points that matter at signing: the home page caps the rate at 3.24% while the factoring FAQ says rates usually run 1.5% to 3.5%, and the home page promises no long-term commitment for the first 90 days while the FAQ says you move into a long-term contract after the 90-day trial. Ask which applies to you, in writing.",
+  "terms": {
+    "rate": "Home page: \"Negotiable Rates, Max 3.24%\". FAQ: \"A small factoring fee (usually 1.5%-3.5%) is charged per invoice. Rates vary based on volume and credit risk.\"",
+    "advance": null,
+    "recourse": null,
+    "contract": "Home page: \"No Long-Term Commitment for the First 90 Days\". FAQ: \"After a 90-day trial period, Bobtail moves you into a long-term contract.\"",
+    "minimum": "No monthly minimums",
+    "transfers": "Same-day pay, no extra charge; \"Expedited payments require an additional fee; however, all other same-day and next-day payments are free.\"",
+    "otherFees": "No reserve requirements, no hidden fees (FAQ)",
+    "speed": "Invoices before 11 AM EST Monday to Friday are funded the same day by 6 PM EST",
+    "fuel": null
+  },
+  "costModel": {
+    "basis": "maximum",
+    "tiers": [
+      {
+        "upTo": null,
+        "ratePct": 3.24
+      }
+    ],
+    "perInvoiceFee": 0,
+    "monthlyMinimumFee": null,
+    "note": "The 3.24% maximum on the home page. The FAQ says rates can run to 3.5%.",
+    "source": "https://www.bobtail.com/"
+  },
+  "bestFor": "Owner-operators who want free same-day pay and no reserve.",
+  "skipIf": "You need a month-to-month contract after 90 days; the FAQ describes a long-term one.",
+  "sources": [
+    "https://www.bobtail.com/",
+    "https://www.bobtail.com/faqs-factoring/"
+  ]
+}

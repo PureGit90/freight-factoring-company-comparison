@@ -1,0 +1,45 @@
+{
+  "directoryType": "service-provider",
+  "pageConflicts": [],
+  "watchOut": [
+    "\"As low as 2%\" is a floor. The rate for your volume is quoted."
+  ],
+  "owner": null,
+  "lastChecked": "2026-11-09",
+  "name": "Summar Financial",
+  "url": "https://summar.com/",
+  "category": "Publishes a rate",
+  "pricingConfidence": "vendor",
+  "pricing": "Factoring fee as low as 2%",
+  "summary": "Non-recourse factoring with a protection program that covers brokers who disappear or pay after 90 days.",
+  "differentiator": "Its \"Summar Shield\" goes past standard non-recourse, which only covers broker bankruptcy: Summar says it covers unpaid invoices when brokers disappear or delay payment beyond 90 days for reasons outside your control. The published rate is a floor (\"as low as 2%\"), not a typical rate.",
+  "terms": {
+    "rate": "Factoring fee as low as 2%",
+    "advance": "Receive up to 98%",
+    "recourse": "Non-recourse, plus Summar Shield",
+    "contract": "No long-term contracts",
+    "minimum": "No monthly minimum requirements",
+    "transfers": null,
+    "otherFees": "No reserve programs; no hidden fees",
+    "speed": null,
+    "fuel": "Up to 50% fuel advances"
+  },
+  "costModel": {
+    "basis": "starting",
+    "tiers": [
+      {
+        "upTo": null,
+        "ratePct": 2
+      }
+    ],
+    "perInvoiceFee": 0,
+    "monthlyMinimumFee": null,
+    "note": "The \"as low as 2%\" floor, the best case.",
+    "source": "https://summar.com/freight-factoring/"
+  },
+  "bestFor": "Carriers worried about brokers who pay late or vanish, not just go bankrupt.",
+  "skipIf": "You want a typical rate in writing before applying.",
+  "sources": [
+    "https://summar.com/freight-factoring/"
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "directoryType": "service-provider",
+  "pageConflicts": [],
+  "watchOut": [
+    "Under 2.20% is a starting rate; ask what your volume gets.",
+    "Advance rate is not stated on the pages we read."
+  ],
+  "owner": "Member-owned cooperative, governed by elected member-carriers (since 1958, per TCE)",
+  "lastChecked": "2026-11-09",
+  "name": "Transport Clearings East (TCE)",
+  "url": "https://www.tceast.com/",
+  "category": "Publishes a rate",
+  "pricingConfidence": "vendor",
+  "pricing": "Rates starting under 2.20%",
+  "summary": "A member-owned freight factoring cooperative that pays year-end dividends to member carriers.",
+  "differentiator": "The only cooperative we found: carriers own it, so pricing is set to cover costs rather than profit, and members get year-end dividends. It publishes a starting rate under 2.20% with no setup fee, no monthly minimum and no long-term contract, but not the rate a small carrier should expect.",
+  "terms": {
+    "rate": "Our rates start under 2.20%",
+    "advance": null,
+    "recourse": "Offers both recourse and non-recourse structures",
+    "contract": "No long-term contracts",
+    "minimum": "No monthly minimums",
+    "transfers": null,
+    "otherFees": "No setup costs and no hidden fees; year-end dividends to members",
+    "speed": "Funding as soon as the next business day",
+    "fuel": null
+  },
+  "costModel": {
+    "basis": "starting",
+    "tiers": [
+      {
+        "upTo": null,
+        "ratePct": 2.2
+      }
+    ],
+    "perInvoiceFee": 0,
+    "monthlyMinimumFee": null,
+    "note": "The \"under 2.20%\" starting rate, the best case. Rates for small carriers are not published.",
+    "source": "https://www.tceast.com/factoring"
+  },
+  "bestFor": "Carriers who want next-day funding and a share of the profits.",
+  "skipIf": "You need same-day funding; TCE states next business day.",
+  "sources": [
+    "https://www.tceast.com/factoring",
+    "https://www.tceast.com/freight-factoring-costs/"
+  ]
+}

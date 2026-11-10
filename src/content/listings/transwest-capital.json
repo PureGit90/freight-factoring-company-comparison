@@ -1,0 +1,27 @@
+{
+  "directoryType": "service-provider",
+  "pageConflicts": [],
+  "watchOut": [],
+  "owner": null,
+  "lastChecked": "2026-11-09",
+  "name": "Transwest Capital",
+  "url": "https://www.transwestcapital.com/",
+  "category": "Quote only",
+  "pricingConfidence": "quote",
+  "summary": "Freight factoring with a near-full advance, month-to-month or longer contracts, and a TCS fuel card.",
+  "differentiator": "Lets you choose month-to-month or a longer contract, and states no setup, monthly minimum or invoice fees. Its fuel card is a TCS partnership card.",
+  "terms": {
+    "rate": null,
+    "advance": "Typically a full advance less a small factoring fee, same day",
+    "recourse": "Recourse or non-recourse arrangements",
+    "contract": "Month-to-month or longer-term contracts",
+    "minimum": "No monthly minimum fees",
+    "transfers": null,
+    "otherFees": "No setup fees or invoice fees",
+    "speed": "Same day once verified",
+    "fuel": "TCS fuel card partnership"
+  },
+  "sources": [
+    "https://www.transwestcapital.com/services/freight-factoring"
+  ]
+}

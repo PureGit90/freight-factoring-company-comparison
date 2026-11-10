@@ -1,0 +1,32 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { CONFIDENCE } from '../lib/site';
+
+const listings = (await getCollection('listings')).sort((a, b) => a.data.name.localeCompare(b.data.name));
+const NS = 'Not stated';
+---
+<BaseLayout title={`All ${listings.length} Freight Factoring Companies Compared`} description={`${listings.length} freight factoring companies, alphabetical: rate, contract, recourse and monthly minimum as each factor publishes them.`}>
+  <div class="wrap prose wide">
+    <p class="crumbs"><a href="/">Home</a> / All factors</p>
+    <h1>All {listings.length} freight factoring companies</h1>
+    <p class="lead">Listed alphabetically. Nobody pays to be listed or placed higher. "Not stated" means the factor's own pages did not say.</p>
+    <div class="table-wrap">
+      <table class="stack">
+        <caption>Factors, rate, contract and recourse</caption>
+        <thead><tr><th scope="col">Factor</th><th scope="col">Rate</th><th scope="col">Contract</th><th scope="col">Recourse</th><th scope="col">Monthly minimum</th></tr></thead>
+        <tbody>
+          {listings.map((l) => (
+            <tr>
+              <th scope="row"><a href={`/listings/${l.id}/`}>{l.data.name}</a><br /><span class={`tag ${CONFIDENCE[l.data.pricingConfidence].tone}`}>{CONFIDENCE[l.data.pricingConfidence].label}</span></th>
+              <td data-label="Rate">{l.data.pricing ?? 'Quoted'}</td>
+              <td data-label="Contract">{l.data.terms.contract ?? NS}</td>
+              <td data-label="Recourse">{l.data.terms.recourse ?? NS}</td>
+              <td data-label="Monthly minimum">{l.data.terms.minimum ?? NS}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</BaseLayout>

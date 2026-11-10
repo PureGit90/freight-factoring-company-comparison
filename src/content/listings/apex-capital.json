@@ -1,0 +1,30 @@
+{
+  "directoryType": "service-provider",
+  "pageConflicts": [],
+  "watchOut": [
+    "Funding fee amounts are not stated."
+  ],
+  "owner": null,
+  "lastChecked": "2026-11-09",
+  "name": "Apex Capital",
+  "url": "https://www.apexcapitalcorp.com/",
+  "category": "Quote only",
+  "pricingConfidence": "quote",
+  "summary": "Long-running trucking factor with recourse and non-recourse options, 24/7 funding and a free fuel card.",
+  "differentiator": "Says no long-term contract, no monthly minimum and no application, setup or UCC filing fees, but lists a \"funding fee\" for sending money to your bank that \"varies with each funding method\" without stating amounts. Ask for the funding fee by method; it is the line that changes the real cost.",
+  "terms": {
+    "rate": null,
+    "advance": "Typically 80-95% (Apex blog)",
+    "recourse": "Non-recourse and recourse options",
+    "contract": "No long-term contracts required",
+    "minimum": "No monthly minimum volume fees",
+    "transfers": "Funding fees: a fee for sending funds to your bank, varies with each funding method",
+    "otherFees": "No application, setup or UCC filing fees",
+    "speed": "24/7 instant funding, including nights, weekends and bank holidays",
+    "fuel": "Free fuel card; fuel credit lines from $2,500 for qualifying clients"
+  },
+  "sources": [
+    "https://www.apexcapitalcorp.com/factoring/freight-and-trucking/",
+    "https://www.apexcapitalcorp.com/blog/factoring-rates/"
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "directoryType": "service-provider",
+  "pageConflicts": [],
+  "watchOut": [
+    "Instant pay costs 1% of the transfer up to $20, so a $1,000 instant transfer costs $10.",
+    "Above $80K a month the rate is not published."
+  ],
+  "owner": "DAT (outgo.com redirects to outgo.dat.com)",
+  "lastChecked": "2026-11-09",
+  "name": "DAT Outgo",
+  "url": "https://www.outgo.com/",
+  "category": "Publishes a rate",
+  "pricingConfidence": "vendor",
+  "pricing": "3% under $18K of monthly invoicing, 2.5% from $18K to $80K, custom above $80K",
+  "summary": "Load-board owner DAT runs this non-recourse factoring program with a published rate table by monthly invoice volume.",
+  "differentiator": "One of only two factors we read that publishes a full rate and transfer-fee table. The rate drops from 3% to 2.5% at $18K of monthly invoicing, so a carrier just under that line pays $540 a month on $18K at 3% versus $450 at 2.5% just above it. ACH is free, a wire is $20, and instant pay costs 1% capped at $20.",
+  "terms": {
+    "rate": "Owner-operator: less than $18k monthly invoicing 3%; $18k-$80k 2.5%; $80k+ custom",
+    "advance": null,
+    "recourse": "Non-recourse: \"Your business is protected if a broker goes bankrupt\"",
+    "contract": "No annual contracts and no cancellation fees",
+    "minimum": "No reserve and no minimum fees",
+    "transfers": "ACH (1-3 days) free; wire (same or next day) $20.00; instant 1.0% fee, max $20.00",
+    "otherFees": "If you choose not to factor, at Day 30 your rate drops to 1.0%",
+    "speed": "Instant transfer available",
+    "fuel": "Outgo Card: 1.0% factoring rate on purchases"
+  },
+  "costModel": {
+    "basis": "tiered",
+    "tiers": [
+      {
+        "upTo": 18000,
+        "ratePct": 3
+      },
+      {
+        "upTo": null,
+        "ratePct": 2.5
+      }
+    ],
+    "perInvoiceFee": 0,
+    "monthlyMinimumFee": null,
+    "note": "ACH transfers, which are free. Wires add $20 each. Above $80K a month the rate is custom.",
+    "source": "https://www.outgo.com/rates"
+  },
+  "bestFor": "Owner-operators already on the DAT load board who want a rate they can check before applying.",
+  "skipIf": "You haul mostly for brokers DAT will not buy invoices from; ask first.",
+  "sources": [
+    "https://www.outgo.com/rates",
+    "https://www.dat.com/factoring"
+  ]
+}

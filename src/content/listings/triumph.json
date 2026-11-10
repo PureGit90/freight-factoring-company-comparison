@@ -1,0 +1,28 @@
+{
+  "directoryType": "service-provider",
+  "pageConflicts": [],
+  "watchOut": [],
+  "owner": "Triumph Financial",
+  "lastChecked": "2026-11-09",
+  "name": "Triumph",
+  "url": "https://triumph.io/",
+  "category": "Quote only",
+  "pricingConfidence": "quote",
+  "summary": "Freight factoring from Triumph Financial, with non-recourse contracts available and funding within minutes.",
+  "differentiator": "One of the few to commit to no wire fees in writing, and to pricing with \"no changes without notice\". The rate itself is quoted.",
+  "terms": {
+    "rate": null,
+    "advance": null,
+    "recourse": "Non-recourse contracts available",
+    "contract": "Pricing with no changes without notice",
+    "minimum": null,
+    "transfers": "We do not charge wire fees",
+    "otherFees": null,
+    "speed": "Factored funds within minutes, any time of day",
+    "fuel": "Clients save 49 cents per gallon on average (Triumph claim)"
+  },
+  "sources": [
+    "https://triumph.io/solutions/factoring/",
+    "https://triumph.io/about-us/about-triumph"
+  ]
+}

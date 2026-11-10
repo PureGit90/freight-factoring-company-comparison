@@ -1,0 +1,32 @@
+{
+  "directoryType": "service-provider",
+  "pageConflicts": [],
+  "watchOut": [
+    "Origination, termination and renewal fee amounts are not stated."
+  ],
+  "owner": "Runs on The Southern Bank Company domain (sobanco.com)",
+  "lastChecked": "2026-11-09",
+  "name": "altLINE",
+  "url": "https://altline.sobanco.com/",
+  "category": "Publishes a rate",
+  "pricingConfidence": "vendor",
+  "pricing": "0.90% to 3.50% of invoice value",
+  "summary": "Bank-run invoice factoring for carriers with a near-full advance and a published fee range.",
+  "differentiator": "The widest published range we found, 0.90% to 3.50%, with a 99% to 100% advance. Unlike the fintech factors it lists the fees it does charge: an initial filing or origination fee, an early termination fee and a renewal fee, on 6 to 12 month contracts.",
+  "terms": {
+    "rate": "You can expect to pay 0.90% to 3.50% of the invoice value in factoring fees with altLINE",
+    "advance": "99% to 100%",
+    "recourse": null,
+    "contract": "Standard freight factoring contracts are 6 to 12 months",
+    "minimum": null,
+    "transfers": null,
+    "otherFees": "Initial filing or origination fee; early termination fee; renewal fee. No debtor credit check, invoice processing or monthly portal fees.",
+    "speed": "Factored invoices are typically paid within 24 hours",
+    "fuel": null
+  },
+  "bestFor": "Established carriers with steady volume who can commit to 6 to 12 months.",
+  "skipIf": "You want to leave at any time; there is an early termination fee.",
+  "sources": [
+    "https://altline.sobanco.com/freight-factoring/"
+  ]
+}

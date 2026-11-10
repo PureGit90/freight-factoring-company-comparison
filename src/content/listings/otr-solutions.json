@@ -1,0 +1,30 @@
+{
+  "directoryType": "service-provider",
+  "pageConflicts": [],
+  "watchOut": [
+    "The rate is quoted, so the 0.5% fuel-card discount has nothing published to discount from."
+  ],
+  "owner": "Also the factoring partner behind TruckSmarter (trucksmarter.com sends carriers to OTR)",
+  "lastChecked": "2026-11-09",
+  "name": "OTR Solutions",
+  "url": "https://otrsolutions.com/",
+  "category": "Quote only",
+  "pricingConfidence": "quote",
+  "summary": "Large factor offering recourse and non-recourse, instant funding around the clock, and a fuel card that lowers the factoring rate.",
+  "differentiator": "Publishes its fuel-advance fees, which few do: $15 to an OTR Fuel Card and $24 by Comchek. Bundling the OTR Fuel Card takes up to 0.5% off the factoring rate, but the rate itself is not published. TruckSmarter users who click \"factor\" land here.",
+  "terms": {
+    "rate": "Rates vary by invoice volume and recourse choice; not published",
+    "advance": "Fuel advances up to 50% of the linehaul before delivery",
+    "recourse": "Both recourse and non-recourse",
+    "contract": "Contract lengths and requirements vary by program",
+    "minimum": "No monthly volume minimums",
+    "transfers": "Advances to the OTR Fuel Card $15; via Comchek $24",
+    "otherFees": null,
+    "speed": "Truly Instant Funding in seconds after approval; same-day funding",
+    "fuel": "OTR Fuel Card: up to 0.5% off the factoring rate, average $0.50 per gallon saved (OTR claim)"
+  },
+  "sources": [
+    "https://otrsolutions.com/faqs",
+    "https://www.trucksmarter.com/partners"
+  ]
+}

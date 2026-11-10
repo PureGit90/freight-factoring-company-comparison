@@ -1,0 +1,31 @@
+{
+  "directoryType": "service-provider",
+  "pageConflicts": [],
+  "watchOut": [
+    "If a broker pays you directly instead of Thunder, the misdirected payment fee is 15% of the invoice or $1,000."
+  ],
+  "owner": null,
+  "lastChecked": "2026-11-09",
+  "name": "Thunder Funding",
+  "url": "https://thunderfunding.com/",
+  "category": "Quote only",
+  "pricingConfidence": "quote",
+  "summary": "Non-recourse by default, 90-day agreements and no volume requirement, with some of the latest same-day cutoffs.",
+  "differentiator": "Its published terms and conditions list the penalty fees that most factors leave to the contract: a misdirected payment fee and a missing notation fee of 15% of the invoice or $1,000, whichever is greater, and a late charge of 0.10% a day. Non-recourse here does not cover disputed loads.",
+  "terms": {
+    "rate": "Structured by company size, brokers and freight type; not published",
+    "advance": null,
+    "recourse": "Non-recourse by default (bankruptcy or insolvency); does not cover short-payments or disputes",
+    "contract": "90-day contract, then not bound to a long-term contract",
+    "minimum": "No minimum number of invoices",
+    "transfers": null,
+    "otherFees": "Terms list: invoice processing fee; late charge 0.10% of face value per day; misdirected payment fee 15% or $1,000, whichever is greater; missing notation fee 15% or $1,000; unnoted advance fee 10% or $100",
+    "speed": "Same-day if sent by 12pm PST, next-day by 9pm PST",
+    "fuel": "Fuel advances 7 days a week"
+  },
+  "sources": [
+    "https://thunderfunding.com/thunder-faq/",
+    "https://thunderfunding.com/freight-factoring-rates-and-fees/",
+    "https://thunderfunding.com/terms-and-conditions/"
+  ]
+}

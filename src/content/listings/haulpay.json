@@ -1,0 +1,46 @@
+{
+  "directoryType": "service-provider",
+  "pageConflicts": [],
+  "watchOut": [
+    "The wire fee amount is not stated.",
+    "Page last modified 2024-08-27."
+  ],
+  "owner": null,
+  "lastChecked": "2026-11-09",
+  "name": "HaulPay",
+  "url": "https://haulpay.io/",
+  "category": "Publishes a rate",
+  "pricingConfidence": "vendor",
+  "pricing": "Max 3% for a single truck operator, lower with volume",
+  "summary": "App-based factoring that can also invoice brokers for you, non-recourse on broker credit, with free same-day and next-day ACH.",
+  "differentiator": "Publishes a ceiling (3% for one truck) rather than a floor, which is the more useful number for a small carrier. It is non-recourse on credit but says it charges back when your paperwork or dates are wrong. The page we read was last modified in August 2024, so confirm the rate is current.",
+  "terms": {
+    "rate": "Our max rates are 3% for a single truck operator and go lower based on volume",
+    "advance": null,
+    "recourse": "Non-recourse on credit; charges back balances if supporting documentation or dates are incorrect",
+    "contract": "No early termination fees or penalty fees",
+    "minimum": null,
+    "transfers": "Same-day and 1-day ACH is free; an additional flat fee for wire transfers",
+    "otherFees": "Only a flat % discount fee per invoice; no interest on aged invoices. Invoicing-only service for declined customers $5.00 per invoice.",
+    "speed": "Funded the same or the next day",
+    "fuel": null
+  },
+  "costModel": {
+    "basis": "maximum",
+    "tiers": [
+      {
+        "upTo": null,
+        "ratePct": 3
+      }
+    ],
+    "perInvoiceFee": 0,
+    "monthlyMinimumFee": null,
+    "note": "The published 3% maximum for a single truck, free ACH. Fleets get lower rates that are not published.",
+    "source": "https://haulpay.io/digital-freight-factoring-for-carriers/"
+  },
+  "bestFor": "Single-truck carriers who want a stated maximum and free ACH.",
+  "skipIf": "You want a rate page updated this year; ours was dated August 2024.",
+  "sources": [
+    "https://haulpay.io/digital-freight-factoring-for-carriers/"
+  ]
+}

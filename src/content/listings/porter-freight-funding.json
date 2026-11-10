@@ -1,0 +1,37 @@
+{
+  "directoryType": "service-provider",
+  "pageConflicts": [
+    "Fees: the rates page marks Porter \"no hidden fees\" against per-transaction fees; the intro-rate post adds a $2 transaction fee.",
+    "Advance: the rates page says up to 100%; the intro-rate post says 95%."
+  ],
+  "watchOut": [
+    "Give written notice at least 60 days before renewal or the term rolls over.",
+    "The post-intro rate is not published."
+  ],
+  "owner": null,
+  "lastChecked": "2026-11-09",
+  "name": "Porter Freight Funding",
+  "url": "https://porterfreightfunding.com/",
+  "category": "Publishes a rate",
+  "pricingConfidence": "vendor",
+  "pricing": "1.5% for the first 60 days for new customers; after that \"adjusts based on your volume and account history\"",
+  "summary": "Factoring and fuel cards for owner-operators and small fleets, with a published introductory rate.",
+  "differentiator": "The 1.5% is an introductory rate for 60 days, not Porter's standing rate, which is not published. Porter's own pages also disagree on fees: the rates page lists per-transaction fees as an industry pitfall and marks Porter \"no hidden fees\", while its intro-rate post adds \"a $2 transaction fee\" and states a 1-year recourse contract.",
+  "terms": {
+    "rate": "1.5% for the first 60 days for eligible carriers; afterward adjusts based on volume and account history. Does not apply to Sprinter Vans or Box Trucks.",
+    "advance": "Rates page: up to 100% of invoice value. Intro post: 95% same-day advance.",
+    "recourse": "1-year recourse contract (intro post)",
+    "contract": "Standard term with written notice required at least 60 days before renewal; no termination fees with proper written notice",
+    "minimum": null,
+    "transfers": "Intro post: \"plus a $2 transaction fee\"",
+    "otherFees": "90-day chargeback policy",
+    "speed": "Same-day funding",
+    "fuel": "Porter Fuel Card"
+  },
+  "bestFor": "New carriers who want a cheap first two months and can live with a 1-year term.",
+  "skipIf": "You run a sprinter van or box truck; the intro rate excludes them.",
+  "sources": [
+    "https://porterfreightfunding.com/freight-factoring/factoring-rates/",
+    "https://porterfreightfunding.com/blog/intro-factoring-rate-for-truckers/"
+  ]
+}

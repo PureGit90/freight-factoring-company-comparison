@@ -1,0 +1,28 @@
+{
+  "directoryType": "service-provider",
+  "pageConflicts": [],
+  "watchOut": [],
+  "owner": null,
+  "lastChecked": "2026-11-09",
+  "name": "Phoenix Capital Group",
+  "url": "https://pcgfactoring.com/",
+  "category": "Quote only",
+  "pricingConfidence": "quote",
+  "summary": "Non-recourse freight factoring for independent carriers and fleets with an EFS fuel card.",
+  "differentiator": "Advances 90% to 100% depending on the invoice and says there are no fees except its service fee, but funds in 24 to 48 hours after delivery, slower than the same-day factors here.",
+  "terms": {
+    "rate": null,
+    "advance": "90% to 100% of the invoice value, depending on the invoice",
+    "recourse": "Non-recourse",
+    "contract": "No long-term contracts",
+    "minimum": null,
+    "transfers": null,
+    "otherFees": "No fees except the service fee",
+    "speed": "24 to 48 hours of delivery",
+    "fuel": "Private EFS fuel card program"
+  },
+  "sources": [
+    "https://pcgfactoring.com/services/freight-factoring/",
+    "https://pcgfactoring.com/services/non-recourse-factoring/"
+  ]
+}
