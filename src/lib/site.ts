@@ -3,7 +3,7 @@
 export const SITE_NAME = 'Freight Factoring Compared';
 export const TAGLINE = 'Freight factoring companies, compared on what they publish.';
 export const SITE_DESCRIPTION =
-  "Rates, fees, contracts and recourse for 29 freight factoring companies, each copied from the factor's own pages with the date we read them.";
+  "Rates, fees, contracts and recourse for 28 freight factoring companies, each copied from the factor's own pages with the date we read them.";
 
 // Nothing is crawlable until GATE approval. /publish-directory sets PUBLIC_NOINDEX=false on production only.
 export const NOINDEX = import.meta.env.PUBLIC_NOINDEX !== 'false';
